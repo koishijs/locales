@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@koishijs/plugin-locale-*": [
+        "packages/*/src",
+      ],
+      "*": [
+        "packages/*/src",
+      ],
+    },
+  },
+  "files": [],
+}
