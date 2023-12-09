@@ -1,4 +1,19 @@
 {
   "name": "@koishijs/plugin-locale-ja-jp",
-  "version": "0.0.1"
+  "description": "ja-JP locale for Koishi",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koishijs/locales.git"
+  },
+  "bugs": {
+    "url": "https://github.com/koishijs/locales/issues"
+  },
+  "homepage": "https://koishi.chat/",
+  "peerDependencies": {
+    "koishi": "^4.16.0"
+  },
+  "devDependencies": {
+    "koishi": "^4.16.0"
+  }
 }
