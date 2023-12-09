@@ -1,13 +1,10 @@
 {
-  "name": "@root/upstream",
+  "name": "@root/locales",
   "version": "1.0.0",
   "private": true,
   "packageManager": "yarn@1.22.19",
   "workspaces": [
-    "packages/*",
-    "adapter/*",
-    "database/*",
-    "server/*"
+    "packages/*"
   ],
   "scripts": {
     "compile": "yakumo esbuild",
@@ -15,7 +12,7 @@
     "bump": "yakumo version",
     "dep": "yakumo upgrade",
     "pub": "yakumo publish",
-    "lint": "eslint packages plugins --ext=ts --cache"
+    "lint": "eslint packages --ext=ts --cache"
   },
   "license": "MIT",
   "devDependencies": {
