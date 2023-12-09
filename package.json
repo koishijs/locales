@@ -1,14 +1,13 @@
 {
   "name": "@root/locales",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "yarn@1.22.19",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "compile": "yakumo esbuild",
-    "build": "yakumo esbuild && yakumo tsc",
+    "build": "node -r esbuild-register scripts",
     "bump": "yakumo version",
     "dep": "yakumo upgrade",
     "pub": "yakumo publish",
@@ -16,7 +15,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@koishijs/eslint-config": "^1.0.4",
+    "@cordisjs/eslint-config": "^1.0.4",
     "@types/node": "^20.10.2",
     "esbuild": "^0.18.20",
     "esbuild-register": "^3.5.0",

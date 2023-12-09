@@ -6,28 +6,25 @@ on:
   workflow_dispatch:
 
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out
-        uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
-      - name: Install
-        run: yarn --no-immutable
-      - name: Build
-        run: yarn lint
-
   build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Check out
         uses: actions/checkout@v4
+      - name: Check out
+        uses: actions/checkout@v4
+        with:
+          repository: koishijs/koishi
+          path: external/koishi
       - name: Setup Node
         uses: actions/setup-node@v4
       - name: Install
         run: yarn --no-immutable
       - name: Build
         run: yarn build
+      - name: Upload Packages
+        uses: actions/upload-artifact@v3
+        with:
+          name: packages
+          path: packages
